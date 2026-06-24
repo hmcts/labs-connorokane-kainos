@@ -1,7 +1,7 @@
 python:
   applicationPort: 8000
-  image: 'hmctsprod.azurecr.io/labs/ConnorOKane-Kainos:latest'
-  ingressHost: labs-ConnorOKane-Kainos-{{ .Values.global.environment }}.service.core-compute-{{ .Values.global.environment }}.internal
+  image: 'hmctsprod.azurecr.io/labs/connorokane-kainos:latest'
+  ingressHost: labs-connorokane-kainos-{{ .Values.global.environment }}.service.core-compute-{{ .Values.global.environment }}.internal
   environment:
   # keyVaults:
   #   labs:

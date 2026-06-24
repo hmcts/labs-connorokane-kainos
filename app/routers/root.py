@@ -6,4 +6,4 @@ router = APIRouter()
 
 @router.get("/", response_class=PlainTextResponse)
 async def welcome() -> str:
-    return "Welcome to ConnorOKane-Kainos"
+    return "Welcome to connorokane-kainos"
