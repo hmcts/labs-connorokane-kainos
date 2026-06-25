@@ -8,10 +8,11 @@ def client():
     return TestClient(app)
 
 
-def test_root_returns_welcome_message(client):
+def test_root_returns_welcome_message(client, monkeypatch):
+    monkeypatch.setenv("FAVOURITE_FRUIT", "plum")
     response = client.get("/")
     assert response.status_code == 200
-    assert "connorokane-kainos" in response.text
+    assert "plum" in response.text
 
 
 def test_readiness_returns_up(client):
