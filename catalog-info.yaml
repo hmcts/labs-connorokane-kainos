@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: "labs-ConnorOKane-Kainos"
+  name: "labs-connorokane-kainos"
   description: Testing Python GoldenPath
   annotations:
     # This must match folder-name/job-name in Jenkins.
-    jenkins.io/job-full-name: cft:HMCTS_labs/labs-ConnorOKane-Kainos
-    github.com/project-slug: 'hmcts/labs-ConnorOKane-Kainos'
+    jenkins.io/job-full-name: cft:HMCTS_labs/labs-connorokane-kainos
+    github.com/project-slug: 'hmcts/labs-connorokane-kainos'
   tags:
     - python
   links:

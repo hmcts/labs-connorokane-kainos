@@ -6,7 +6,7 @@ from app.routers import root
 # from azure.monitor.opentelemetry import configure_azure_monitor
 # configure_azure_monitor()
 
-app = FastAPI(title="ConnorOKane-Kainos")
+app = FastAPI(title="connorokane-kainos")
 
 app.include_router(root.router)
 

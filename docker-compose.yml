@@ -1,11 +1,11 @@
 services:
-  ConnorOKane-Kainos:
+  connorokane-kainos:
     build:
       context: .
       args:
         - http_proxy
         - https_proxy
         - no_proxy
-    image: hmctsprod.azurecr.io/labs/ConnorOKane-Kainos
+    image: hmctsprod.azurecr.io/labs/connorokane-kainos
     ports:
       - 8000:8000

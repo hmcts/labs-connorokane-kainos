@@ -1,4 +1,4 @@
-# labs-ConnorOKane-Kainos
+# labs-connorokane-kainos
 
 Testing Python GoldenPath
 
@@ -20,8 +20,8 @@ The service will be available at `http://localhost:8000`.
 > **Note:** The Dockerfile uses an HMCTS internal base image from `hmctsprod.azurecr.io`. You must be logged in to the registry (`az acr login --name hmctsprod`) before building.
 
 ```bash
-docker build -t ConnorOKane-Kainos .
-docker run -p 8000:8000 ConnorOKane-Kainos
+docker build -t connorokane-kainos .
+docker run -p 8000:8000 connorokane-kainos
 ```
 
 ## Health endpoints
@@ -93,7 +93,7 @@ uv lock --upgrade  # regenerate uv.lock with latest compatible versions
 
 ## Database (PostgreSQL)
 
-To enable PostgreSQL, uncomment the `postgresql` block in `charts/labs-ConnorOKane-Kainos/values.yaml` and add your database config to the `environment` section.
+To enable PostgreSQL, uncomment the `postgresql` block in `charts/labs-connorokane-kainos/values.yaml` and add your database config to the `environment` section.
 
 ## Jenkins
 

@@ -9,6 +9,6 @@ properties([
 
 def type = "python"
 def product = "labs"
-def component = "ConnorOKane-Kainos"
+def component = "connorokane-kainos"
 
 withNightlyPipeline(type, product, component) {}

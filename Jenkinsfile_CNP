@@ -1,10 +1,10 @@
 #!groovy
 
-@Library("Infrastructure")
+@Library("Infrastructure@2.1.0")
 
 def type = "python"
 def product = "labs"
-def component = "ConnorOKane-Kainos"
+def component = "connorokane-kainos"
 
 // docs:
 // 1. https://github.com/hmcts/cnp-jenkins-library

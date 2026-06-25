@@ -11,7 +11,7 @@ def client():
 def test_root_returns_welcome_message(client):
     response = client.get("/")
     assert response.status_code == 200
-    assert "ConnorOKane-Kainos" in response.text
+    assert "connorokane-kainos" in response.text
 
 
 def test_readiness_returns_up(client):
