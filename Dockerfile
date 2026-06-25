@@ -1,5 +1,5 @@
 # ---- Builder: install app and dependencies ----
-FROM hmctsprod.azurecr.io/imported/slim/python:3.13-slim-trixie AS builder
+FROM hmctssbox.azurecr.io/imported/slim/python:3.13-slim-trixie AS builder
 # renovate: datasource=github-releases depName=astral-sh/uv
 COPY --from=ghcr.io/astral-sh/uv:0.11.21 /uv /uvx /bin/
 ENV UV_MALWARE_CHECK=1 \
@@ -15,7 +15,7 @@ RUN uv sync \
     cp -r .venv/lib/python3.13/site-packages /opt/deps
 
 # ---- Final: HMCTS distroless base (App Insights pre-wired) ----
-FROM hmctsprod.azurecr.io/base/python:3.13-distroless
+FROM hmctssbox.azurecr.io/base/python:3.13-distroless
 
 COPY --from=builder /opt/deps /opt/deps
 COPY app/ /opt/app/app/
